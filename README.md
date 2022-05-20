@@ -1,13 +1,13 @@
-# Ansible Tutorial
+# Ansible tutorial
 
 This tutorial uses Docker to provide a playground for Ansible.
 The scenario here has 3 Docker containers running in the same network.
 
 1. the ansible container
 2. the remote-host-one container
-3. the remote-host-tow container
+3. the remote-host-two container
 
-The ansible container is used to manage the other 2 host containers via - of course Ansible. :-)
+The ansible container is used to manage the other 2 host containers via - of course Ansible. :smiley:
 
 ## Steps
 
@@ -34,7 +34,7 @@ ansible --version
 ansible host1 -i inventory.txt -m ping
 ~~~
 
-## Install VIM on a host container
+## Install VI in a container
 
 ~~~bash
 apt-get update
