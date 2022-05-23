@@ -46,3 +46,11 @@ apt-get install vim
 ~~~bash
 ansible-galaxy collection list
 ~~~
+
+## Install 3 new users on each host
+
+- paste the content of the yml file into a playbook file on the ansible master
+
+~~~bash
+$> ansible-playbook playbook1.yml --extra-vars "ansible_sudo_pass=s3cr3t"`
+~~~
