@@ -54,3 +54,10 @@ ansible-galaxy collection list
 ~~~bash
 $> ansible-playbook playbook1.yml --extra-vars "ansible_sudo_pass=s3cr3t"`
 ~~~
+
+## Install Aptitude
+
+~~~bash
+apt-get update
+apt-get install aptitude
+~~~
