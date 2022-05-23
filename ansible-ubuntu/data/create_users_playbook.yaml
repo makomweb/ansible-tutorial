@@ -1,0 +1,26 @@
+---
+# Play 1 - User related tasks
+- name: Create 3 users (Peter + Paul + Mary)
+  hosts: group1
+  become: yes
+  tasks:
+    - name: create user Peter
+      user:
+        name: Peter
+        group: users
+        shell: /bin/bash
+        home: /home/Peter
+
+    - name: create user Paul
+      user:
+        name: Paul
+        group: users
+        shell: /bin/bash
+        home: /home/Paul
+
+    - name: create user Mary
+      user:
+        name: Mary
+        group: users
+        shell: /bin/bash
+        home: /home/Mary
