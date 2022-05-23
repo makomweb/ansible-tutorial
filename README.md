@@ -40,3 +40,9 @@ ansible host1 -i inventory.txt -m ping
 apt-get update
 apt-get install vim
 ~~~
+
+## Check module collection
+
+~~~bash
+ansible-galaxy collection list
+~~~
