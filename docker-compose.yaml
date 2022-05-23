@@ -8,6 +8,8 @@ services:
     stdin_open: true
     build:
       context: ./
+    volumes:
+      - ./ansible-practice/inventory.txt:/etc/ansible/hosts
     networks:
       - test
 

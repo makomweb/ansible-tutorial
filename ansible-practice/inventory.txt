@@ -1,3 +1,4 @@
 [group1]
 host1 ansible_host=remote-host-one ansible_user=test ansible_password=s3cr3t
 host2 ansible_host=remote-host-two ansible_user=test ansible_password=s3cr3t
+
