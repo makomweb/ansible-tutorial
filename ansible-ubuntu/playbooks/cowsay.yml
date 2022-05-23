@@ -14,7 +14,19 @@
       apt:
         upgrade: safe
 
-    - name: install cowsay - its probably
+    - name: install cowsay - its probably required
       apt:
         name: cowsay
       become: true
+
+    - name: Install Git VCS
+      become: true
+      apt:
+        name: git
+        state: latest
+
+    - name: Install PHP CLI
+      become: true
+      apt:
+        name: php8.1-cli
+        state: latest
