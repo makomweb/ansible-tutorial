@@ -14,3 +14,11 @@ RUN apt-get update && \
     apt install -y openssh-client && \
     apt install -y openssh-server && \
     apt install -y sshpass
+
+RUN mkdir -p /etc/ansible
+RUN echo "[local]\n" \
+"localhost ansible_connection=local\n\n" \
+"[group1]\n" \
+"host1 ansible_host=remote-host-one ansible_user=test ansible_password=s3cr3t\n" \
+"host2 ansible_host=remote-host-two ansible_user=test ansible_password=s3cr3t\n" \
+> /etc/ansible/hosts
