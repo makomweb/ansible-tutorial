@@ -1,6 +1,7 @@
 FROM ubuntu:20.04
 
 ENV DEBIAN_FRONTEND=noninteractive
+ENV ANSIBLE_HOST_KEY_CHECKING=False
 
 RUN apt-get update && \
     apt-get install -y gcc python-dev libkrb5-dev && \
