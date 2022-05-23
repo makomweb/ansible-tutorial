@@ -25,13 +25,8 @@
         name: git
         state: latest
 
-    - name: Add PHP 7 PPA repository
-      become: true
-      apt_repository:
-        repo: 'ppa:ondrej/php'
-
     - name: Install PHP CLI
       become: true
       apt:
-        name: php7.4-cli
+        name: php8.1-cli
         state: latest
