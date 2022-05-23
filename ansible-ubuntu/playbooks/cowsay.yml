@@ -1,0 +1,10 @@
+---
+- hosts: group1
+
+  tasks:
+    - ping: ~
+
+    - name: install cowsay - its probably
+      apt:
+        name: cowsay
+      become: true

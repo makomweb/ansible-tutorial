@@ -10,6 +10,8 @@ services:
       context: ./ansible-ubuntu
     networks:
       - test
+    volumes:
+      - ./ansible-ubuntu/playbooks:/home/ansible-playbooks
 
   remote_host_one:
     container_name: remote-host-one
